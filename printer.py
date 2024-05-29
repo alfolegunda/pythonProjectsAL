@@ -1,12 +1,16 @@
+import time
+def print_simbol(n, symbol='*', delay=1):
+    # Print increasing sequence of asterisks
+    for i in range(n + 1):
+        print(symbol * i)
+        time.sleep(delay)
+
+    # Print decreasing sequence of asterisks
+    for j in range(n, 0, -1):
+        print(symbol * j)
+        time.sleep(delay)
 def printer(n):
-    n=n+1
-    x = "*"
-    for i in range(n):
-        print(x*i)
-    for j in range(n,0,-1):
-        print(x*j)
-
-
+    print_simbol(n)
 printer(5)
 
 
