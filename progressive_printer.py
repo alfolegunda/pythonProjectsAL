@@ -1,6 +1,6 @@
 import time
 
-def progressive_print(text, delay=0.01, repetitions=10):
+def progressive_print(text, delay=0.02, repetitions=20):
     for i in range(1, len(text) + 1):
         # Genera la parte del texto a imprimir
         partial_text = text[:i]
